@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <!-- Mirrored from lala-html.netlify.app/about_2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2023 08:36:20 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Adarsh" />
+    <!-- Site Title -->
+    <title>Career Page</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/animated-headline.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      /* Base styles for the accordion */
+      .accordion {
+        margin: 20px auto;
+        max-width: 400px;
+      }
+    
+      .accordion li {
+        list-style: none;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        background: #bc3553;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+      }
+    
+      .accordion li label {
+        display: flex;
+        align-items: center;
+        color: #ffff;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    
+      label::before {
+        content: "+";
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        transition: transform 0.3s ease-in-out; /* Add transition */
+      }
+    
+      input[type="radio"] {
+        display: none;
+      }
+    
+      .accordion .content {
+        color: #ffff;
+        padding: 0 15px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+      }
+    
+      /* Responsive adjustments */
+      @media screen and (max-width: 768px) {
+        .accordion {
+          margin: 10px auto;
+          max-width: 90%;
+        }
+        
+        .accordion li {
+          margin: 5px;
+          padding: 8px;
+        }
+    
+        .accordion li label {
+          font-size: 16px;
+          color: #ffff;
+        }
+    
+        label::before {
+          font-size: 20px;
+        }
+      }
+    
+      /* Additional responsive adjustments for smaller screens if needed */
+      @media screen and (max-width: 480px) {
+        .accordion li label {
+          font-size: 14px;
+        }
+    
+        label::before {
+          font-size: 18px;
+        }
+      }
+    
+      .accordion input[type="radio"]:checked + label + .content {
+        max-height: 400px;
+        padding: 10px 10px 20px;
+      }
+    
+      .accordion input[type="radio"]:checked + label::before {
+        content: "+";
+        transform: rotate(45deg); /* Rotate the plus icon to a minus icon */
+      }
+  
+    </style>
+    
+    
+  </head>
+
+  <body>
+    <div class="cs-preloader">
+      <div class="cs-preloader__in">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
+    </div>
+    <!-- Start Header Section -->
+    <header class="cs-site__header cs-style1">
+      <div class="cs-main__header">
+          <div class="container">
+              <div class="cs-main__header__in">
+                  <div class="cs-main__header__left">
+                      <a class="cs-site__branding" style="width: 350px; height: auto" href="index.html">
+                          <img src="assets/img/logo.png" alt="">
+                      </a>
+                  </div>
+                  <div class="cs-main__header__right">
+                      <div class="cs-nav">
+                          <ul class="cs-nav__list active">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="service.html">Services</a></li>
+                              <li><a href="about.html">About us</a></li>
+                              <li><a href="career.html">Career</a></li>
+                              <li><a href="contact_1.html">Contact</a></li>
+                          </ul>
+                          <ul class="right_header-btn " >
+                              <li class="login-btn"  ><a href="#">Candidate Login</a></li>
+                              <li class="sign-btn"  onclick="companypop()">Company Login</li>
+                          </ul>
+                      </div><!-- .cs-nav -->
+                  </div><!-- .cs-main__header__right -->
+              </div>
+          </div>
+      </div>
+  </header>
+    <!-- End Header Section -->
+
+    <!-- Start Hero -->
+    <div class="cs-hero cs-style1 cs-center">
+      <div class="container">
+        <div
+          class="cs-hero__text wow fadeInRight"
+          data-wow-duration="0.8s"
+          data-wow-delay="0.3s"
+        >
+          <h1 class="cs-hero__title" style="font-size: 65px">
+            Careers <br /><span style="font-size: 29px">
+              Where Innovation, <span style="color: #263a5d"
+                > Meets Opportunity</span
+              ></span
+            >
+          </h1>
+        </div>
+       
+      </div>
+      <div class="cs-hero__img cs-parallax"> 
+        <div class="cs-to__right" >
+          <img src="assets/img/agency/Profiling-amico.png" style="width: 450px;"   alt="Hero Image" />
+        </div>
+      </div>
+      <div class="cs-partical__shape_wrap">
+        <div class="cs-partical__shape cs-shape__position1">
+        
+        </div>
+        <div class="cs-partical__shape cs-shape__position2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="15px"
+            height="15px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="rgb(238, 118, 115)"
+              d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="15px"
+            height="15px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="#bc3553"
+              d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="10px"
+            height="10px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="#bc3552"
+              d="M5.000,-0.000 C7.761,-0.000 10.000,2.238 10.000,5.000 C10.000,7.761 7.761,10.000 5.000,10.000 C2.239,10.000 -0.000,7.761 -0.000,5.000 C-0.000,2.238 2.239,-0.000 5.000,-0.000 Z"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="20px"
+            height="20px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="#bc3553"
+              d="M10.000,-0.000 C15.523,-0.000 20.000,4.477 20.000,10.000 C20.000,15.523 15.523,20.000 10.000,20.000 C4.477,20.000 -0.000,15.523 -0.000,10.000 C-0.000,4.477 4.477,-0.000 10.000,-0.000 Z"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="15px"
+            height="15px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="#ededed"
+              d="M7.500,-0.000 C11.642,-0.000 15.000,3.357 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.357 3.358,-0.000 7.500,-0.000 Z"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position7">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            width="20"
+          >
+            <path
+              fill="#bc3553"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="60"
+              d="M368 368L144 144M368 144L144 368"
+            />
+          </svg>
+        </div>
+        <div class="cs-partical__shape cs-shape__position8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="243px"
+            height="243px"
+          >
+            <path
+              fill-rule="evenodd"
+              fill="#bd355359"
+              d="M121.500,0.000 C188.603,0.000 243.000,54.397 243.000,121.500 C243.000,188.602 188.603,243.000 121.500,243.000 C54.397,243.000 -0.000,188.602 -0.000,121.500 C-0.000,54.397 54.397,0.000 121.500,0.000 Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <div>
+      <!-- <div class="cs-height__130 cs-height__lg__80"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="cs-parallax cs-style9 overflow-hidden">
+              <div class="cs-height__125 cs-height__lg__70"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <div class="cs-section__heading cs-style3">
+                      <h2 class="cs-section__title">Current Openings</h2>
+                    </div>
+                    <div class="cs-height__45 cs-height__lg__45"></div>
+                    <div class="cs-accordians cs-style1">
+                      <div class="cs-accordian ">
+                        <div class="cs-accordian__head">
+                          <h2 class="cs-accordian__title">
+                            ${job.title}
+                          </h2>
+                          <span class="cs-accordian__toggle"
+                            ><i class="fas fa-caret-down"></i
+                          ></span>
+                        </div>
+                        <div class="cs-accordian-body">
+                          <p>
+                            ${job.description}
+                          </p>
+                          <div class="header-btn">
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                LOCATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                NEW YORK
+                              </h3>
+                            </div>
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                QUALIFICATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                3+ YEARS EXPERIENCE, GRADUATION
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="right_header-btn-1">
+                            <div class="sign-btn">
+                              <a target="_blank" href="career_application.html">Apply</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cs-accordian active">
+                        <div class="cs-accordian__head">
+                          <h2 class="cs-accordian__title">
+                            Senior Software Developer - Web Development
+                          </h2>
+                          <span class="cs-accordian__toggle"
+                            ><i class="fas fa-caret-down"></i
+                          ></span>
+                        </div>
+                        <div class="cs-accordian-body">
+                          <p>
+                            Suspendisse potenti. Curabitur euismod facilisis
+                            neque, eu malesuada diam finibus non. Nullam nec
+                            vehicula leo. Morbi porta ante eu feugiat mollis
+                            ellus blandit massa enim. Nullam id varius nunc
+                            ellus blandit massa enim. Nullam id varius nunc.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Phasellus blandit massa enim. Nullam id varius
+                            nunc. Vivamus bibendum magna ex, et faucibus lacus
+                            venenatis eget.
+                          </p>
+                          <div class="header-btn">
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                LOCATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                NEW YORK
+                              </h3>
+                            </div>
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                QUALIFICATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                3+ YEARS EXPERIENCE, GRADUATION
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="right_header-btn-1">
+                            <div class="sign-btn">
+                              <a target="_blank" href="career_application.html">Apply</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cs-accordian">
+                        <div class="cs-accordian__head">
+                          <h2 class="cs-accordian__title">
+                            Senior Software Developer - Web Development
+                          </h2>
+                          <span class="cs-accordian__toggle"
+                            ><i class="fas fa-caret-down"></i
+                          ></span>
+                        </div>
+                        <div class="cs-accordian-body">
+                          <p>
+                            Suspendisse potenti. Curabitur euismod facilisis
+                            neque, eu malesuada diam finibus non. Nullam nec
+                            vehicula leo. Morbi porta ante eu feugiat mollis
+                            ellus blandit massa enim. Nullam id varius nunc
+                            ellus blandit massa enim. Nullam id varius nunc.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Phasellus blandit massa enim. Nullam id varius
+                            nunc. Vivamus bibendum magna ex, et faucibus lacus
+                            venenatis eget.
+                          </p>
+                          <div class="header-btn">
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                LOCATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                NEW YORK
+                              </h3>
+                            </div>
+                            <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                QUALIFICATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">
+                                3+ YEARS EXPERIENCE, GRADUATION
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="right_header-btn-1">
+                            <div class="sign-btn">
+                              <a target="_blank" href="career_application.html">Apply</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    
+                     
+                   
+                     
+                    </div>
+                   
+                    <div class="cs-height__80 cs-height__lg__80"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cs-height__125 cs-height__lg__70"></div>
+              <div class="cs-parallax__shape cs-position1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="485px"
+                  height="485px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(242, 248, 255)"
+                    d="M242.500,-0.000 C376.429,-0.000 485.000,108.571 485.000,242.500 C485.000,376.429 376.429,485.000 242.500,485.000 C108.571,485.000 0.000,376.429 0.000,242.500 C0.000,108.571 108.571,-0.000 242.500,-0.000 Z"
+                  />
+                </svg>
+              </div>
+              <div class="cs-parallax__shape cs-position2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="485px"
+                  height="485px"
+                >
+                <path
+                fill-rule="evenodd"
+                fill="rgb(242, 248, 255)"
+                    d="M242.500,-0.000 C376.429,-0.000 485.000,108.571 485.000,242.500 C485.000,376.429 376.429,485.000 242.500,485.000 C108.571,485.000 -0.000,376.429 -0.000,242.500 C-0.000,108.571 108.571,-0.000 242.500,-0.000 Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+         <!-- accordation -->
+         <div class="col-lg-4">
+
+           <ul class="accordion">
+             <li>
+               <input type="radio" name="accordion" id="first" checked>
+               <label for="first">Our Culture</label>
+               <div class="content">
+                 <p>Assure prides itself on fostering a dynamic, inclusive, and innovative workplace culture. As an Assure HR Advisor, you'll be part of a team that values: Transparency: We believe in open and honest communication, ensuring that everyone's voice is heard. Diversity and Inclusion: We celebrate the unique backgrounds and perspectives of our employees, and we actively work to create an inclusive environment for all. Continuous Learning: We're committed to your professional growth and development. Our culture encourages continuous learning and provides opportunities to expand your HR expertise. Employee Well-being: We understand the importance of work-life balance and offer programs that prioritize the health and well-being of our team members.</p>
+               </div>
+             </li>
+            <li>
+              <input type="radio" name="accordion" id="second">
+              <label for="second">Join Our Team</label>
+              <div class="content">
+                <p>Joining Assure as an HR Advisor" offers a unique and rewarding career opportunity for individuals passionate about Human Resources. If you're looking for a rewarding career in HR where you can make a meaningful impact, we invite you to consider joining Assure. Together, we'll continue to create positive workplace cultures, empower employees, and drive change in the HR industry.</p>
+                <div class="right_header-btn-1">
+                  <div class="sign-btn">
+                    <a target="_blank" href="career_application.html">Apply</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+           </ul>
+         </div>
+        </div>
+      </div>
+      <div class="cs-height__130 cs-height__lg__80"></div>
+    </div>
+
+
+
+
+
+
+
+   
+
+    <!-- Footer Section -->
+    <footer class="cs-footer cs-style1 cs-parallax">
+      <div class="cs-height__110 cs-height__lg__70"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer__item">
+              <h2 class="cs-widget__title">About</h2>
+              <div class="cs-footer__widget__text">
+                We consistently provide top-notch guidance to ensure our clients achieve success and experience substantial growth in their businesses.
+              </div>
+              <div class="cs-height__15 cs-height__lg__15"></div>
+              <div class="cs-social__btns cs-style1">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+               
+                <a href="#"><i class="fab fa-instagram"></i></a>
+               
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 448 512"
+                    fill="#fff"
+                  >
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer__item widget_nav_menu">
+              <h2 class="cs-widget__title">Services</h2>
+              <ul class="menu">
+                <li><a href="#">Resume Building</a></li>
+                <li><a href="#">Training & Development</a></li>
+                <li><a href="#">Career Counselling</a></li>
+                <li><a href="#">Recruitment Services</a></li>
+                <li><a href="#">Health Management</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer__item widget_nav_menu">
+              <h2 class="cs-widget__title">Support</h2>
+              <ul class="menu">
+                <li><a href="#">Employee Relations</a></li>
+                <li><a href="#">Performance Management</a></li>
+                <li><a href="#">HR policy development</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- .col -->
+          <div class="col-lg-3 col-sm-6">
+            <div class="cs-footer__item widget_nav_menu">
+              <h2 class="cs-widget__title">Quick Links</h2>
+              <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="contact_1.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- .col -->
+        </div>
+        <!-- <div class="cs-height__85 cs-height__lg__40"></div> -->
+      </div>
+      <div class="cs-copyright text-center">
+        <div class="container">
+          © 2023 - Assure HR Advisor. All Rights Reserved.
+        </div>
+      </div>
+      <div class="cs-parallax__shape cs-position1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="13px"
+          height="13px"
+        >
+          <path
+            fill-rule="evenodd"
+            fill="#fa7c27"
+            d="M6.500,-0.000 C10.090,-0.000 13.000,2.910 13.000,6.500 C13.000,10.090 10.090,13.000 6.500,13.000 C2.910,13.000 -0.000,10.090 -0.000,6.500 C-0.000,2.910 2.910,-0.000 6.500,-0.000 Z"
+          />
+        </svg>
+      </div>
+      <!-- <div class="cs-parallax__shape cs-position2 cs-to__up">
+        <img src="assets/img/agency/footer-image.png" alt="" />
+      </div> -->
+      <div class="cs-parallax__shape cs-position3 cs-to__left__up">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="416px"
+          height="403px"
+        >
+          <path
+            fill-rule="evenodd"
+            fill="#ef7e397a"
+            d="M210.500,62.000 C284.230,62.000 344.000,121.769 344.000,195.499 C344.000,269.229 284.230,328.999 210.500,328.999 C136.770,328.999 77.000,269.229 77.000,195.499 C77.000,121.769 136.770,62.000 210.500,62.000 Z"
+          />
+          <path
+            fill-rule="evenodd"
+            stroke="#ef7e397a"
+            stroke-width="2px"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            fill="none"
+            d="M207.500,1.000 C321.547,1.000 414.000,90.543 414.000,201.000 C414.000,311.457 321.547,401.000 207.500,401.000 C93.453,401.000 1.000,311.457 1.000,201.000 C1.000,90.543 93.453,1.000 207.500,1.000 Z"
+          />
+        </svg>
+      </div>
+      <div class="cs-parallax__shape cs-position4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="10px"
+          height="10px"
+        >
+          <path
+            fill-rule="evenodd"
+            fill="#fa7c27"
+            d="M5.000,-0.000 C7.761,-0.000 10.000,2.238 10.000,5.000 C10.000,7.761 7.761,10.000 5.000,10.000 C2.238,10.000 -0.000,7.761 -0.000,5.000 C-0.000,2.238 2.238,-0.000 5.000,-0.000 Z"
+          />
+        </svg>
+      </div>
+      <div class="cs-parallax__shape cs-position5">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="15px"
+          height="15px"
+        >
+          <path
+            fill-rule="evenodd"
+            fill="#fff"
+            d="M7.500,-0.000 C11.642,-0.000 15.000,3.358 15.000,7.500 C15.000,11.642 11.642,15.000 7.500,15.000 C3.358,15.000 -0.000,11.642 -0.000,7.500 C-0.000,3.358 3.358,-0.000 7.500,-0.000 Z"
+          />
+        </svg>
+      </div>
+    </footer>
+    <!-- Footer Section -->
+
+    <!-- Start Video Popup -->
+    <div class="cs-video__popup">
+      <div class="cs-video__popup__overlay"></div>
+      <div class="cs-video__popup__content">
+        <div class="cs-video__popup__layer"></div>
+        <div class="cs-video__popup__container">
+          <div class="cs-video__popup__align">
+            <div class="ratio ratio-16x9">
+              <iframe src="about:blank"></iframe>
+            </div>
+          </div>
+          <div class="cs-video__popup__close"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Video Popup -->
+
+    <div id="cs-scrollup"><i class="fas fa-chevron-up"></i></div>
+
+    <!-- Script -->
+    <script>
+      // Get the current page URL
+      var currentPage = window.location.href;
+
+      // Get all menu items
+      var menuItems = document.querySelectorAll('.cs-nav__list li a');
+
+      // Loop through menu items and add the 'active' class to the matching one
+      menuItems.forEach(function (menuItem) {
+          if (menuItem.href === currentPage) {
+              menuItem.parentNode.classList.add('active');
+          }
+      });
+  </script>
+   <script type="text/javascript">
+    function companypop(){
+      window.open('company.html ' , 'width=800', 'height=500')
+    }
+  </script> 
+  <script>
+    // Define the URL of the API
+const apiUrl = 'http://localhost:9000/jobpostings';
+
+// Function to make a GET request to the API
+function getJobOpenings() {
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Handle the job openings data here
+      displayJobOpenings(data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+}
+
+// Function to display job openings on your webpage
+function displayJobOpenings(jobOpenings) {
+  const jobList = document.getElementById('job-list'); // Assuming you have an element with id 'job-list'
+
+  jobOpenings.forEach(job => {
+    const jobItem = document.createElement('div');
+    jobItem.innerHTML = `
+      <h3>${job.title}</h3>
+      <p>${job.description}</p>
+      <p>Location: ${job.location}</p>
+      <p>Qualification: ${job.qualification}</p>
+      <a href="${job.applyLink}" target="_blank">Apply</a>
+    `;
+    jobList.appendChild(jobItem);
+  });
+}
+
+// Call the function to fetch job openings when your page loads
+getJobOpenings();
+
+  </script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/isotope.pkg.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.slick.min.js"></script>
+    <script src="assets/js/lightgallery.min.js"></script>
+    <script src="assets/js/jquery.counter.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/ripples.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/animated-headline.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from lala-html.netlify.app/about_2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 03 Oct 2023 08:36:24 GMT -->
+</html>

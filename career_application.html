@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for Apply</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="overflow-hidden mb-1">
+                    <h2 class="font-weight-normal text-7 mb-0"><strong class="font-weight-extra-bold">Application</strong> Form for Apply</h2>
+                </div>
+                <div class="overflow-hidden mb-4 pb-3">
+                    <p class="mb-0">Please fill out the form to apply.</p>
+                </div>
+
+                <form id="applicationForm" action="<?php echo basename($_SERVER['PHP_SELF']); ?>#contact-sent" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" value="true" name="emailSent" id="emailSent">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label class="required text-2">Full Name</label>
+                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="fullName" id="fullName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label class="required text-2">Email Address</label>
+                            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="required text-2">Phone Number</label>
+                        <input type="tel" value="" data-msg-required="Please enter your phone number." maxlength="100" class="form-control" name="phoneNumber" id="phoneNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="required text-2">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="maleGender" name="gender" value="Male" required>
+                            <label class="form-check-label" for="maleGender">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="femaleGender" name="gender" value="Female" required>
+                            <label class="form-check-label" for="femaleGender">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="otherGender" name="gender" value="Other" required>
+                            <label class="form-check-label" for="otherGender">Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="it" name="experience" value="IT" required>
+                            <label class="form-check-label" for="it">IT</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="nonIt" name="experience" value="Non-IT" required>
+                            <label class="form-check-label" for="nonIt">Non-IT</label>
+                        </div>
+                    </div>
+                    <div id="itExperienceDetails" style="display: none;">
+                        <div class="form-group">
+                            <label class="text-2">Specify IT Experience</label>
+                            <input type="text" class="form-control" name="itExperienceDetails" id="itExperienceDetails">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="required text-2">Resume</label>
+                        <input type="file" class="form-control-file" name="resume" id="resume" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-2">Comment</label>
+                        <textarea maxlength="5000" rows="6" class="form-control" name="comment" id="comment"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12 mb-5">
+                            <input type="submit" id="contactFormSubmit" value="Apply" class="btn btn-primary btn-modern pull-right" data-loading-text="Loading...">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("input[name='experience']").change(function () {
+                if ($(this).val() === "Non-IT") {
+                    $("#itExperienceDetails").show();
+                } else {
+                    $("#itExperienceDetails").hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
