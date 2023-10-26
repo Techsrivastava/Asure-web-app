@@ -1,42 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User List</title>
+  <title>Real-Time Notifications</title>
 </head>
 <body>
-    <h1>User List</h1>
-    <ul id="user-list">
-        <!-- This is a placeholder image that will be replaced with user data -->
-    </ul>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          // Fetch the list of users from your API
-          fetch("http://localhost:10000/user")
-            .then((response) => response.json())
-            .then((data) => {
-              const userList = document.getElementById("user-list");
-      
-              // Iterate through the list of users and create list items with profile photos
-              data.forEach((user) => {
-                const listItem = document.createElement("li");
-                listItem.innerHTML = `
-                  <h2>${user.name}</h2>
-                  <p>Phone: ${user.phone}</p>
-                  <p>Location: ${user.location}</p>
-                  <img src="http://localhost:10000/uploads/${user.profilePhoto}" alt="${user.name}'s Profile Photo" width="100">
-                `;
-      
-                userList.appendChild(listItem);
-              });
-            })
-            .catch((error) => {
-              console.error("Error fetching user data:", error);
-            });
-        });
-      </script>
-      
+  <h1>Real-Time Notifications</h1>
+  <button id="sendMatch">Send Matching Property</button>
+  <div id="notification"></div>
+  
+  <script src="http://localhost:10000/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('match', (data) => {
+      console.log('Match found:', data.message);
+      // You can display a notification or take other actions here
+    });
+  </script>
 </body>
 </html>

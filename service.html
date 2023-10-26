@@ -23,13 +23,48 @@
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/animated-headline.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style></style>
+    <style>
+     /* Common styles for all screen sizes */
+      .servicesimg{
+        
+    width: 550px;
+    margin-left: 180px;
+}
+      
+/* Styles for small screens (max-width: 576px) */
+@media (max-width: 576px) {
+    /* Add styles for small screens here */.servicesimg{
+    
+      margin-left: 2px;
+    }
+}
+
+/* Styles for medium screens (min-width: 577px and max-width: 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Add styles for medium screens here */
+    .servicesimg {
+     
+      margin-left: 1px;
+      background-color: blue;
+    }
+}
+
+/* Styles for large screens (min-width: 993px) */
+@media (min-width: 993px) {
+    /* Add styles for large screens here */
+    .servicesimg{
+     
+      margin-left: 58px;
+    }
+}
+
+    </style>
   </head>
 
   <body>
     <div class="cs-preloader">
       <div class="cs-preloader__in">
-        <img src="assets/img/logo.png" alt="" />
+        <img src="assets/img/logo loading.png" alt="" />
       </div>
     </div>
     <!-- Start Header Section -->
@@ -51,9 +86,11 @@
                               <li><a href="career.html">Career</a></li>
                               <li><a href="contact_1.html">Contact</a></li>
                           </ul>
-                          <ul class="right_header-btn " >
-                              <li class="login-btn"  ><a href="#">Candidate Login</a></li>
-                              <li class="sign-btn"  onclick="companypop()">Company Login</li>
+                          <ul class="right_header-btn " style="margin-left: 30px;">
+                              
+                            <li>
+                              <a href="https://sprightly-flan-4ebc77.netlify.app/" class="sign-btn">Login</a>
+                          </li>
                           </ul>
                       </div><!-- .cs-nav -->
                   </div><!-- .cs-main__header__right -->
@@ -228,8 +265,8 @@
                 </div>
                 <h2 class="cs-icon__box__title">Job Placement</h2>
                 <div class="cs-icon__box__subtitle">
-                  Finding the perfect job that aligns with your skills,
-                  aspirations, and career goals can be a daunting task.
+                  At our HR Consultancy, we ensure you land the ideal job with our expert network and industry insights, powered by our job alert system
+
                 </div>
                 <a href="#" class="cs-btn cs-style2"
                   >Read More <i class="fas fa-long-arrow-alt-right"></i
@@ -321,9 +358,9 @@
                 </div>
                 <h2 class="cs-icon__box__title">Recruitment Services</h2>
                 <div class="cs-icon__box__subtitle">
-                  At Assure HR Advisor Consultancy, we understand that your
-                  company's success relies on the quality of its workforce.
-                  That's why we are.
+                  As a dedicated Recruitment Agency, we are firmly committed to ensuring the excellence of your company's workforce for its success
+
+
                 </div>
                 <a href="#" class="cs-btn cs-style2"
                   >Read More <i class="fas fa-long-arrow-alt-right"></i
@@ -384,8 +421,9 @@
             <div class="col-lg-8">
               <img
                 src="assets/img/agency/Company-pana.png"
-                style="width: 550px; margin-left: 180px"
+                
                 alt=""
+                class="servicesimg"
               />
             </div>
           </div>
@@ -439,7 +477,7 @@
               >
                 Why Should Jobseekers Choose Assure HR Advisor?
               </h2>
-              <div class="right_header-btn-1" style="margin-left: 1px">
+              <div class="right_header-btn" style="margin-left: 1px">
                 <div class="sign-btn">
                   <a onclick="candidatepop()" >Sign Up</a>
                 </div>

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/coming-soon/static/css/main.e216ecb0.css",
+    "main.js": "/coming-soon/static/js/main.31da9baf.js",
+    "static/media/logo.png": "/coming-soon/static/media/logo.00b8c3e737809c405e39.png",
+    "static/media/IBMPlexSans-MediumItalic.ttf": "/coming-soon/static/media/IBMPlexSans-MediumItalic.b5d2aae060bd17a44e92.ttf",
+    "static/media/IBMPlexSans-BoldItalic.ttf": "/coming-soon/static/media/IBMPlexSans-BoldItalic.2154ceb10b0ff9a38ed6.ttf",
+    "static/media/IBMPlexSans-Italic.ttf": "/coming-soon/static/media/IBMPlexSans-Italic.3c841fd3d99ee585c6cd.ttf",
+    "static/media/IBMPlexSans-Medium.ttf": "/coming-soon/static/media/IBMPlexSans-Medium.e1777542474b207f1248.ttf",
+    "static/media/IBMPlexSans-Regular.ttf": "/coming-soon/static/media/IBMPlexSans-Regular.0519459d8ed646e0f90d.ttf",
+    "static/media/IBMPlexSans-Bold.ttf": "/coming-soon/static/media/IBMPlexSans-Bold.c6aebfe2ea10a16d4a22.ttf",
+    "static/media/twitter.svg": "/coming-soon/static/media/twitter.e7d4a49da775003f36c09c6f96394e29.svg",
+    "index.html": "/coming-soon/index.html",
+    "static/media/facebook.svg": "/coming-soon/static/media/facebook.df18c75cafac73d45aa0b58e6a4a24ef.svg",
+    "main.e216ecb0.css.map": "/coming-soon/static/css/main.e216ecb0.css.map",
+    "main.31da9baf.js.map": "/coming-soon/static/js/main.31da9baf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e216ecb0.css",
+    "static/js/main.31da9baf.js"
+  ]
+}

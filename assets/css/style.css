@@ -603,8 +603,10 @@ hr {
 
 .cs-vertical__middle {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   height: 100%;
+  /* margin-bottom: -23px; */
+  padding-top: 57px;
 }
 
 .cs-vertical__middle__in {
@@ -3361,14 +3363,13 @@ input#submit:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 30px !important;
+  margin-left: 30px;
 }
 .right_header-btn .login-btn {
   background-color: #ededed;
-  padding: 8px 8px;
+  padding: 8px 20px;
   border-radius: 60px;
   font-weight: bold;
-  font-size: 10px;
   border: 2px solid #ededed;
 }
 .right_header-btn .login-btn:hover {
@@ -3379,14 +3380,14 @@ input#submit:hover {
 .right_header-btn .sign-btn {
   background-color: #bc3553;
   color: #fff;
-  padding: 8px 8px;
+  padding: 8px 20px;
   border-radius: 60px;
-  font-weight: bold;
-  font-size: 10px;
+  
   border: 2px solid #bc3553;
 }
+
 .right_header-btn .sign-btn:hover {
-  color: #bc3553;
+  color: #ffff;
   background-color: transparent;
 }
 .right_header-btn-1 {
@@ -7239,8 +7240,8 @@ ul.page-numbers li:not(:last-child) {
 }
 .cs-testimonial__slider__style1 .cs-slider__arrows.cs-style2 {
   padding-bottom: 20px;
-  margin-left: 15px;
-  margin-top: -20px;
+  margin-left: 136px;
+  margin-top: -8px;
 }
 .cs-testimonial__slider__style1 .cs-tesimonial__shape.cs-style1 {
   background: linear-gradient(90deg, #fa7c27 0%, #fdcd59 100%);

@@ -122,7 +122,7 @@
   <body>
     <div class="cs-preloader">
       <div class="cs-preloader__in">
-        <img src="assets/img/logo.png" alt="" />
+        <img src="assets/img/logo loading.png" alt="" />
       </div>
     </div>
     <!-- Start Header Section -->
@@ -144,9 +144,11 @@
                               <li><a href="career.html">Career</a></li>
                               <li><a href="contact_1.html">Contact</a></li>
                           </ul>
-                          <ul class="right_header-btn " >
-                              <li class="login-btn"  ><a href="#">Candidate Login</a></li>
-                              <li class="sign-btn"  onclick="companypop()">Company Login</li>
+                          <ul class="right_header-btn " style="margin-left: 30px;">
+                              
+                            <li>
+                              <a href="https://sprightly-flan-4ebc77.netlify.app/" class="sign-btn">Login</a>
+                          </li>
                           </ul>
                       </div><!-- .cs-nav -->
                   </div><!-- .cs-main__header__right -->
@@ -297,151 +299,16 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-10 offset-lg-1">
-                    <div class="cs-section__heading cs-style3">
-                      <h2 class="cs-section__title">Current Openings</h2>
-                    </div>
-                    <div class="cs-height__45 cs-height__lg__45"></div>
-                    <div class="cs-accordians cs-style1">
-                      <div class="cs-accordian ">
-                        <div class="cs-accordian__head">
-                          <h2 class="cs-accordian__title">
-                            ${job.title}
-                          </h2>
-                          <span class="cs-accordian__toggle"
-                            ><i class="fas fa-caret-down"></i
-                          ></span>
-                        </div>
-                        <div class="cs-accordian-body">
-                          <p>
-                            ${job.description}
-                          </p>
-                          <div class="header-btn">
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                LOCATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                NEW YORK
-                              </h3>
-                            </div>
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                QUALIFICATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                3+ YEARS EXPERIENCE, GRADUATION
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="right_header-btn-1">
-                            <div class="sign-btn">
-                              <a target="_blank" href="career_application.html">Apply</a>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="cs-section__heading cs-style3">
+                          <h2 class="cs-section__title">Current Openings</h2>
                       </div>
-                      <div class="cs-accordian active">
-                        <div class="cs-accordian__head">
-                          <h2 class="cs-accordian__title">
-                            Senior Software Developer - Web Development
-                          </h2>
-                          <span class="cs-accordian__toggle"
-                            ><i class="fas fa-caret-down"></i
-                          ></span>
-                        </div>
-                        <div class="cs-accordian-body">
-                          <p>
-                            Suspendisse potenti. Curabitur euismod facilisis
-                            neque, eu malesuada diam finibus non. Nullam nec
-                            vehicula leo. Morbi porta ante eu feugiat mollis
-                            ellus blandit massa enim. Nullam id varius nunc
-                            ellus blandit massa enim. Nullam id varius nunc.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Phasellus blandit massa enim. Nullam id varius
-                            nunc. Vivamus bibendum magna ex, et faucibus lacus
-                            venenatis eget.
-                          </p>
-                          <div class="header-btn">
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                LOCATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                NEW YORK
-                              </h3>
-                            </div>
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                QUALIFICATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                3+ YEARS EXPERIENCE, GRADUATION
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="right_header-btn-1">
-                            <div class="sign-btn">
-                              <a target="_blank" href="career_application.html">Apply</a>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="cs-height__45 cs-height__lg__45"></div>
+                      <div class="cs-accordians cs-style1" id="accordionContainer">
+                          <!-- Accordion sections will be dynamically added here -->
                       </div>
-                      <div class="cs-accordian">
-                        <div class="cs-accordian__head">
-                          <h2 class="cs-accordian__title">
-                            Senior Software Developer - Web Development
-                          </h2>
-                          <span class="cs-accordian__toggle"
-                            ><i class="fas fa-caret-down"></i
-                          ></span>
-                        </div>
-                        <div class="cs-accordian-body">
-                          <p>
-                            Suspendisse potenti. Curabitur euismod facilisis
-                            neque, eu malesuada diam finibus non. Nullam nec
-                            vehicula leo. Morbi porta ante eu feugiat mollis
-                            ellus blandit massa enim. Nullam id varius nunc
-                            ellus blandit massa enim. Nullam id varius nunc.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Phasellus blandit massa enim. Nullam id varius
-                            nunc. Vivamus bibendum magna ex, et faucibus lacus
-                            venenatis eget.
-                          </p>
-                          <div class="header-btn">
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                LOCATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                NEW YORK
-                              </h3>
-                            </div>
-                            <div class="header-btn">
-                              <h1 style="font-size: 18px; font-weight: 800">
-                                QUALIFICATION:
-                              </h1>
-                              <h3 style="font-size: 18px; font-weight: 300">
-                                3+ YEARS EXPERIENCE, GRADUATION
-                              </h3>
-                            </div>
-                          </div>
-                          <div class="right_header-btn-1">
-                            <div class="sign-btn">
-                              <a target="_blank" href="career_application.html">Apply</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-                    
-                     
-                   
-                     
-                    </div>
-                   
-                    <div class="cs-height__80 cs-height__lg__80"></div>
+                      <div class="cs-height__80 cs-height__lg__80"></div>
                   </div>
-                </div>
+              </div>
               </div>
               <div class="cs-height__125 cs-height__lg__70"></div>
               <div class="cs-parallax__shape cs-position1">
@@ -482,16 +349,16 @@
                <input type="radio" name="accordion" id="first" checked>
                <label for="first">Our Culture</label>
                <div class="content">
-                 <p>Assure prides itself on fostering a dynamic, inclusive, and innovative workplace culture. As an Assure HR Advisor, you'll be part of a team that values: Transparency: We believe in open and honest communication, ensuring that everyone's voice is heard. Diversity and Inclusion: We celebrate the unique backgrounds and perspectives of our employees, and we actively work to create an inclusive environment for all. Continuous Learning: We're committed to your professional growth and development. Our culture encourages continuous learning and provides opportunities to expand your HR expertise. Employee Well-being: We understand the importance of work-life balance and offer programs that prioritize the health and well-being of our team members.</p>
+                 <p style="font-weight: 500;font-size: small;">Assure prides itself on fostering a dynamic, inclusive, and innovative workplace culture. As an Assure HR Advisor, you'll be part of a team that values: Transparency: We believe in open and honest communication, ensuring that everyone's voice is heard. Diversity and Inclusion: We celebrate the unique backgrounds and perspectives of our employees, and we actively work to create an inclusive environment for all. Continuous Learning: We're committed to your professional growth and development. Our culture encourages continuous learning and provides opportunities to expand your HR expertise. </p>
                </div>
              </li>
             <li>
               <input type="radio" name="accordion" id="second">
               <label for="second">Join Our Team</label>
               <div class="content">
-                <p>Joining Assure as an HR Advisor" offers a unique and rewarding career opportunity for individuals passionate about Human Resources. If you're looking for a rewarding career in HR where you can make a meaningful impact, we invite you to consider joining Assure. Together, we'll continue to create positive workplace cultures, empower employees, and drive change in the HR industry.</p>
-                <div class="right_header-btn-1">
-                  <div class="sign-btn">
+                <p style="font-weight: 500;font-size: small;">Joining Assure as an HR Advisor" offers a unique and rewarding career opportunity for individuals passionate about Human Resources. If you're looking for a rewarding career in HR where you can make a meaningful impact, we invite you to consider joining Assure. Together, we'll continue to create positive workplace cultures, empower employees, and drive change in the HR industry.</p>
+                <div class="right_header-btn" style=" margin-left: -6px;">
+                  <div class="sign-btn " style="background-color: #263A5D;" >
                     <a target="_blank" href="career_application.html">Apply</a>
                   </div>
                 </div>
@@ -703,49 +570,68 @@
       window.open('company.html ' , 'width=800', 'height=500')
     }
   </script> 
-  <script>
-    // Define the URL of the API
-const apiUrl = 'http://localhost:9000/jobpostings';
+<script>
+  // Fetch job data from the API
+  fetch('https://asure-backend.onrender.com/jobpostings')
+      .then(response => response.json())
+      .then(data => {
+          const accordionContainer = document.getElementById('accordionContainer');
+          let activeAccordion = null; // Track the active accordion
 
-// Function to make a GET request to the API
-function getJobOpenings() {
-  fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      // Handle the job openings data here
-      displayJobOpenings(data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-}
+          data.forEach(job => {
+              const accordion = document.createElement('div');
+              accordion.className = 'cs-accordian';
+              accordion.innerHTML = `
+                  <div class="cs-accordian__head">
+                      <h2 class="cs-accordian__title">${job.title}</h2>
+                      <span class="cs-accordian__toggle">
+                          <i class="fas fa-caret-down"></i>
+                      </span>
+                  </div>
+                  <div class="cs-accordian-body">
+                      <p>${job.description}</p>
+                      <div class="header-btn">
+                          <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                  LOCATION:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">${job.location}</h3>
+                          </div>
+                          <div class="header-btn">
+                              <h1 style="font-size: 18px; font-weight: 800">
+                                  SALARY:
+                              </h1>
+                              <h3 style="font-size: 18px; font-weight: 300">${job.salary}</h3>
+                          </div>
+                      </div>
+                      <div class="right_header-btn-1">
+                          <div class="sign-btn">
+                              <a target="_blank" href="career_application.html">Apply</a>
+                          </div>
+                      </div>
+                  </div>
+              `;
 
-// Function to display job openings on your webpage
-function displayJobOpenings(jobOpenings) {
-  const jobList = document.getElementById('job-list'); // Assuming you have an element with id 'job-list'
+              // Add a click event listener to toggle the accordion
+              accordion.querySelector('.cs-accordian__head').addEventListener('click', () => {
+                  if (activeAccordion) {
+                      // Close the previously active accordion
+                      activeAccordion.querySelector('.cs-accordian-body').style.display = 'none';
+                  }
 
-  jobOpenings.forEach(job => {
-    const jobItem = document.createElement('div');
-    jobItem.innerHTML = `
-      <h3>${job.title}</h3>
-      <p>${job.description}</p>
-      <p>Location: ${job.location}</p>
-      <p>Qualification: ${job.qualification}</p>
-      <a href="${job.applyLink}" target="_blank">Apply</a>
-    `;
-    jobList.appendChild(jobItem);
-  });
-}
+                  // Toggle the clicked accordion
+                  const body = accordion.querySelector('.cs-accordian-body');
+                  body.style.display = body.style.display === 'none' ? 'block' : 'none';
+                  activeAccordion = body.style.display === 'none' ? null : accordion;
+              });
 
-// Call the function to fetch job openings when your page loads
-getJobOpenings();
-
-  </script>
+              accordionContainer.appendChild(accordion);
+          });
+      })
+      .catch(error => {
+          console.error('Error fetching job data: ' + error);
+      });
+</script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
